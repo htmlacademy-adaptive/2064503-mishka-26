@@ -1,0 +1,41 @@
+.main-nav__modal-window {
+  width: @mobile-width;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 79px;
+  z-index: 1;
+}
+
+.main-nav__list {
+  .list-reset();
+}
+
+.site-list__item,
+.user-list__item {
+  width: @mobile-width;
+  box-sizing: border-box;
+  padding: 28px 30px 28px 76px;
+  padding-top: 28px;
+  padding-bottom: 27px;
+  background-color: @color-white;
+  box-shadow:
+    0 1px 0 @color-light-grey,
+    inset 0 1px 0 @color-light-grey;
+}
+
+.site-list-button,
+.user-list-button {
+  padding: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+  background: none;
+  color: @color-black;
+  text-decoration: none;
+}
+
+.main-nav__modal-window-open {
+  display: block;
+}

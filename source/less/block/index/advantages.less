@@ -1,0 +1,100 @@
+.advantages {
+  width: @mobile-width;
+  padding: 31px 30px 27px;
+  box-sizing: border-box;
+}
+
+.advantages__title {
+  margin-bottom: 28px;
+}
+
+.advantages__list {
+  display: grid;
+  .list-reset();
+}
+
+.advantages__item {
+  position: relative;
+  margin-bottom: 32px;
+
+  &--ecology {
+    margin-bottom: 30px;
+    background-image: url("../img/icon/advantages-icons/icon-flower.svg");
+    background-repeat: no-repeat;
+    background-position: 8px 0;
+  }
+
+  &--price {
+    margin-bottom: 35px;
+    background-image: url("../img/icon/advantages-icons/icon-money.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &--likes {
+    margin-bottom: 32px;
+    background-image: url("../img/icon/advantages-icons/icon-heart.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 0;
+  }
+
+  &--knitting {
+    margin-bottom: 33px;
+    background-image: url("../img/icon/advantages-icons/icon-tangle.svg");
+    background-repeat: no-repeat;
+    background-position: 3px 0;
+  }
+
+  &--knitting::after {
+    background-image: url("../img/icon/advantages-icons/icon-tangle.svg");
+    background-repeat: no-repeat;
+    background-position: 3px 0;
+  }
+
+  &--support {
+    margin-bottom: 32px;
+    background-image: url("../img/icon/advantages-icons/icon-rocket.svg");
+    background-repeat: no-repeat;
+    background-position: -6px 0;
+  }
+
+  &--packaging {
+    margin-bottom: 0;
+    background-image: url("../img/icon/advantages-icons/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 3px 0;
+  }
+}
+
+.advantages__text {
+  margin: 0;
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: @color-black;
+
+  &--ecology {
+    margin-top: 54px;
+  }
+
+  &--price {
+    margin-top: 53px;
+  }
+
+  &--likes {
+    margin-top: 48px;
+  }
+
+  &--knitting {
+    margin-top: 51px;
+  }
+
+  &--support {
+    margin-top: 49px;
+  }
+
+  &--packaging {
+    margin-top: 52px;
+  }
+}
