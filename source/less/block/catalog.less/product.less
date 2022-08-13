@@ -2,6 +2,14 @@
   padding: 27px 26px;
   box-sizing: border-box;
   border: 1px solid @color-light-grey;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(@color-black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(@color-black, 0.1);
+  }
 }
 
 .product__image {
@@ -15,6 +23,14 @@
   font-size: 17px;
   line-height: 24px;
   color: @color-black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__description {
@@ -41,8 +57,20 @@
   padding: none;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .product__card-icon {
-  cursor: pointer;
+  fill: @color-black;
+  opacity: 0.2;
+
+  &:hover {
+    fill: @color-tiffany;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: @color-tiffany;
+    opacity: 0.3;
+  }
 }

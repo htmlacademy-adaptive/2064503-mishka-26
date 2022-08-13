@@ -14,6 +14,10 @@ body {
   color: @color-grey;
 }
 
+input:focus-visible {
+  outline: none;
+}
+
 .vissually-hidden {
   .vissually-hidden();
 }
@@ -25,3 +29,41 @@ body {
   line-height: 30px;
   color: @color-black;
 }
+
+.field {
+  padding: 16px 0;
+  border: none;
+  border-bottom: 2px solid @color-black;
+
+  &::placeholder {
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 18px;
+    color: @color-black;
+    opacity: 0.3;
+  }
+
+  &:hover {
+    border-color: @color-tiffany;
+
+    & + .field-icon {
+      fill: @color-tiffany;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    border-color: @color-tiffany;
+
+    & + .field-icon {
+      fill: @color-tiffany;
+      opacity: 1;
+    }
+  }
+}
+
+.field-icon {
+  fill: @color-black;
+  opacity: 0.2;
+}
+

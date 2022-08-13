@@ -28,6 +28,15 @@
   grid-column: 2 / 3;
   .link-reset();
   text-decoration: underline @color-tiffany;
+
+  &:hover {
+    color: @color-tiffany;
+  }
+
+  &:active {
+    color: @color-tiffany;
+    text-decoration: underline rgba(@color-tiffany, 0.1);
+  }
 }
 
 .contacts__address-head {
@@ -42,7 +51,8 @@
 }
 
 .contacts__map {
-  margin: 0 -30px 34px;
+  display: block;
+  margin: 0 -30px 42px;
   padding: 0;
   border: none;
 }

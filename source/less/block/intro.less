@@ -1,16 +1,22 @@
 .intro {
-  width: @mobile-width;
-  padding: 73px 30px;
-  box-sizing: border-box;
   background-color: @color-dirty-white;
+}
+
+.intro__wrapper {
+  margin: 0 auto;
+  padding: 73px 30px;
+  width: @mobile-width;
+  box-sizing: border-box;
+
 
   &--index {
     padding-bottom: 120px;
     background-image: url("../img/backgrounds/index-intro-background.jpg");
+    background-repeat: no-repeat;
   }
 }
 
-.intro-title {
+.intro__title {
   width: 260px;
   margin: 0 auto;
   font-weight: 700;

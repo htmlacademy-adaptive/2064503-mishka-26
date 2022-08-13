@@ -1,0 +1,46 @@
+.type-control {
+  position: relative;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.type-control__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 2px solid @color-grey;
+
+  &:hover {
+    border-color: @color-tiffany;
+  }
+
+  &:active {
+    border-color: rgba(@color-black, 0.3);
+  }
+}
+
+.type-control__label {
+  margin-left: 60px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: @color-black;
+}
+
+.type-control__input:checked + .type-control__mark::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: @color-tiffany;
+}

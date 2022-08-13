@@ -1,0 +1,33 @@
+.user-list__item {
+  .nav-list-item();
+}
+
+.user-list__icon {
+  position: absolute;
+  top: 50%;
+  fill: @color-black;
+  opacity: 0.2;
+  transform: translateY(-50%);
+
+  &--search {
+    left: 32px;
+  }
+
+  &--cart {
+    left: 30px;
+  }
+}
+
+.user-list__button {
+  .nav-list-button();
+}
+
+.user-list__button:hover + .user-list__icon {
+  fill: @color-tiffany;
+  opacity: 1;
+}
+
+.user-list__button:active + .user-list__icon {
+  fill: @color-tiffany;
+  opacity: 0.2;
+}
