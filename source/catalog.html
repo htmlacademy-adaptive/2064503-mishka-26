@@ -189,6 +189,35 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container modal-container--close">
+      <section class="add-cart">
+        <h2 class="add-cart__title">Добавить в корзину</h2>
+        <p class="add-cart__subtitle">Выберите размер:</p>
+        <form class="add-cart__form" action="https://echo.htmlacademy.ru/" method="get">
+          <ul class="add-cart__list">
+            <li class="add-cart__item">
+              <label class="add-cart__size-control size-control">
+                <input class="size-control__input vissually-hidden" type="radio" name="size" checked>
+                <span class="size-control__mark">S</span>
+              </label>
+            </li>
+            <li class="add-cart__item">
+              <label class="add-cart__size-control size-control">
+                <input class="size-control__input vissually-hidden" type="radio" name="size">
+                <span class="size-control__mark">M</span>
+              </label>
+            </li>
+            <li class="add-cart__item">
+              <label class="add-cart__size-control size-control">
+                <input class="size-control__input vissually-hidden" type="radio" name="size">
+                <span class="size-control__mark">L</span>
+              </label>
+            </li>
+          </ul>
+          <button class="add-cart__button button button--add-cart" type="submit">Добавить</button>
+        </form>
+      </section>
+    </div>
     <script src="js/menu-toggle.js"></script>
   </body>
 </html>
