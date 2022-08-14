@@ -14,14 +14,6 @@
   height: 38px;
   box-sizing: border-box;
   border: 2px solid @color-grey;
-
-  &:hover {
-    border-color: @color-tiffany;
-  }
-
-  &:active {
-    border-color: rgba(@color-black, 0.3);
-  }
 }
 
 .color-control__label {
@@ -43,4 +35,14 @@
   border-left: 2px solid @color-black;
   border-bottom: 2px solid @color-black;
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.color-control__input {
+  &:hover + .color-control__mark {
+    border-color: @color-tiffany;
+  }
+
+  &:active + .color-control__mark {
+    border-color: rgba(@color-black, 0.3);
+  }
 }
