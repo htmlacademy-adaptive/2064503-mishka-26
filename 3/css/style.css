@@ -79,14 +79,14 @@ input:focus-visible {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  src: url("../../fonts/opensans.woff2") format("woff2"), url("../../fonts/opensans.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff``");
+  src: url("../../fonts/opensansbold.woff2") format("woff2"), url("../../fonts/opensansbold.woff") format("woff``");
   font-display: swap;
 }
 .button {
@@ -1074,12 +1074,6 @@ input:focus-visible {
   box-sizing: border-box;
   border: 2px solid #444444;
 }
-.type-control__mark:hover {
-  border-color: #63d1bb;
-}
-.type-control__mark:active {
-  border-color: rgba(0, 0, 0, 0.3);
-}
 .type-control__label {
   margin-left: 60px;
   font-weight: 700;
@@ -1098,6 +1092,12 @@ input:focus-visible {
   border-radius: 50%;
   background-color: #63d1bb;
 }
+.type-control__input:hover + .type-control__mark {
+  border-color: #63d1bb;
+}
+.type-control__input:active + .type-control__mark {
+  border-color: rgba(0, 0, 0, 0.3);
+}
 .color-control {
   position: relative;
   min-height: 38px;
@@ -1113,12 +1113,6 @@ input:focus-visible {
   height: 38px;
   box-sizing: border-box;
   border: 2px solid #444444;
-}
-.color-control__mark:hover {
-  border-color: #63d1bb;
-}
-.color-control__mark:active {
-  border-color: rgba(0, 0, 0, 0.3);
 }
 .color-control__label {
   margin-left: 60px;
@@ -1138,5 +1132,11 @@ input:focus-visible {
   border-left: 2px solid #000000;
   border-bottom: 2px solid #000000;
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+.color-control__input:hover + .color-control__mark {
+  border-color: #63d1bb;
+}
+.color-control__input:active + .color-control__mark {
+  border-color: rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=style.css.map */
