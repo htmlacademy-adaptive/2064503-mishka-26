@@ -264,7 +264,7 @@ input:focus-visible {
 }
 .intro__wrapper--index {
   padding-bottom: 120px;
-  background-image: url("../img/backgrounds/index-intro-background.jpg");
+  background-image: url("../../img/backgrounds/index-intro-background.jpg");
   background-repeat: no-repeat;
 }
 .intro__title {
