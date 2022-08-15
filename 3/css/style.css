@@ -76,14 +76,14 @@ input:focus-visible {
   display: none;
 }
 @font-face {
-  font-family: "Inter";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   src: url("../../fonts/opensans.woff2") format("woff2"), url("../../fonts/opensans.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: "Inter";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   src: url("../../fonts/opensansbold.woff2") format("woff2"), url("../../fonts/opensansbold.woff") format("woff``");
@@ -297,16 +297,15 @@ input:focus-visible {
   height: 100%;
   display: block;
   text-decoration: none;
+  background-repeat: no-repeat;
 }
 .categories__item-link--interior {
   background-image: url("../img/icon/icon-lamp.svg");
   background-position: top 23px right 36px;
-  background-repeat: no-repeat;
 }
 .categories__item-link--toys {
   background-image: url("../img/icon/icon-lego.svg");
   background-position: top 21px right 27px;
-  background-repeat: no-repeat;
 }
 .categories__item-title {
   width: 130px;
@@ -318,12 +317,12 @@ input:focus-visible {
   text-decoration: none;
 }
 .featured {
-  width: 320px;
-  padding: 31px 30px 42px;
-  box-sizing: border-box;
   background-image: url("../img/backgrounds/zigzag-line.svg");
   background-position: 100% 100%;
   background-repeat: repeat-x;
+  width: 320px;
+  padding: 31px 30px 42px;
+  box-sizing: border-box;
 }
 .featured__title {
   margin-bottom: 4px;
@@ -456,12 +455,12 @@ input:focus-visible {
   margin-top: 52px;
 }
 .reviews {
-  width: 320px;
-  padding: 31px 30px 51px;
-  box-sizing: border-box;
   background-image: url("../img/backgrounds/zigzag-line.svg");
   background-position: 100% 100%;
   background-repeat: repeat-x;
+  width: 320px;
+  padding: 31px 30px 51px;
+  box-sizing: border-box;
 }
 .reviews__title {
   margin-bottom: 14px;
@@ -559,10 +558,10 @@ input:focus-visible {
   grid-column: 1 / 2;
 }
 .contacts__email-link {
-  margin: 0;
-  grid-column: 2 / 3;
   text-decoration: none;
   color: inherit;
+  margin: 0;
+  grid-column: 2 / 3;
   -webkit-text-decoration: underline #63d1bb;
           text-decoration: underline #63d1bb;
 }
@@ -579,10 +578,10 @@ input:focus-visible {
   grid-column: 1 / 2;
 }
 .contacts__address-link {
-  margin: 0;
-  grid-column: 2 / 3;
   text-decoration: none;
   color: inherit;
+  margin: 0;
+  grid-column: 2 / 3;
 }
 .contacts__map {
   display: block;
@@ -613,10 +612,10 @@ input:focus-visible {
   justify-content: center;
 }
 .social__list {
-  display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
   column-gap: 29px;
 }
 .social__item {
@@ -1038,7 +1037,7 @@ input:focus-visible {
   border-color: #63d1bb;
 }
 .order__wishes-field::placeholder {
-  font-family: inherit;
+  font-family: "Open Sans", sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #000000;
