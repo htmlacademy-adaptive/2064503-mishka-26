@@ -1,0 +1,44 @@
+.categories__list {
+  .list-reset();
+}
+
+.categories__item {
+  position: relative;
+  box-sizing: border-box;
+  background-color: @color-tiffany;
+
+  &--toys {
+    background-color: @color-tiffany-dark;
+  }
+}
+
+.categories__item-link {
+  width: @mobile-width;
+  padding: 24px 30px 31px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  background-repeat: no-repeat;
+
+  &--interior {
+    background-image: url("../img/icon/icon-lamp.svg");
+    background-position: top 23px right 36px;
+  }
+
+  &--toys {
+    background-image: url("../img/icon/icon-lego.svg");
+    background-position: top 21px right 27px;
+  }
+}
+
+.categories__item-title {
+  width: 130px;
+  display: block;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: @color-white;
+  text-decoration: none;
+}
