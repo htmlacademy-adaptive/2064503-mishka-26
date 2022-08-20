@@ -44,6 +44,7 @@
   display: flex;
   padding-top: 22px;
   justify-content: space-between;
+  border-top: 1px solid @color-light-grey;
 }
 
 .product__price {
@@ -54,7 +55,6 @@
 }
 
 .product__card {
-  padding: none;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -72,5 +72,30 @@
   &:active {
     fill: @color-tiffany;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product {
+    display: flex;
+    min-height: 334px;
+    box-sizing: border-box;
+  }
+
+  .product__image {
+    width: 334px;
+    height: auto;
+    min-height: 334px;
+  }
+
+  .product__wrapper {
+    width: 100%;
+    padding: 27px 34px 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__price-wrapper {
+    margin-top: auto;
   }
 }

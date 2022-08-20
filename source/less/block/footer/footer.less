@@ -21,5 +21,31 @@
   padding: 22px 30px 32px;
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    width: @tablet-width;
+    min-height: 143px;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .main-footer__social {
+    padding: 0;
+    border: none;
+  }
+
+  .main-footer__copyright {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__wrapper {
+    width: @desktop-width;
+  }
 }

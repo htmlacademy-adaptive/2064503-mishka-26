@@ -42,3 +42,29 @@
   color: @color-white;
   text-decoration: none;
 }
+
+@media (min-width: @tablet-width) {
+  .categories__list {
+    .padding-sides-adaptive();
+    display: flex;
+    width: @tablet-width;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .categories__item {
+    width: 100%;
+  }
+
+
+  .categories__item-link {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .categories__list {
+    width: @desktop-width;
+  }
+}
+

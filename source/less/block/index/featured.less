@@ -1,6 +1,5 @@
 .featured {
   .zig-zag-line();
-  width: @mobile-width;
   padding: 31px 30px 42px;
   box-sizing: border-box;
 }
@@ -12,8 +11,9 @@
 .featured__product-week {
   margin: 0;
   margin-bottom: 17px;
+  font-weight: 700;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 17px;
   text-transform: uppercase;
   color: @color-tiffany;
 }
@@ -21,6 +21,8 @@
 .featured__description {
   margin: 0;
   margin-bottom: 18px;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .featured__specifications-list {
@@ -49,7 +51,6 @@
   margin-bottom: 25px;
 }
 
-
 .featured__price {
   display: block;
   margin: 0 auto 25px;
@@ -58,3 +59,67 @@
   font-size: 17px;
   line-height: 24px;
 }
+
+@media (min-width: @tablet-width) {
+  .featured {
+    padding: 0;
+  }
+
+  .featured__wrapper {
+    padding-top: 40px;
+    padding-bottom: 69px;
+  }
+
+  .featured__wrapper-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+  }
+
+  .featured__product-week {
+    width: 100px;
+    margin: 5px 13px 0;
+    text-align: center;
+  }
+
+  .featured__wrapper-markup {
+    display: grid;
+    grid-template-columns: 292px 334px;
+    grid-template-rows: auto;
+    column-gap: 42px;
+  }
+
+  .featured__image {
+    width: 334px;
+    height: 404px;
+    margin-top: auto;
+    margin-bottom: 0;
+    grid-column: -2 / -1;
+    grid-row: 1 / 5;
+  }
+
+  .featured__description {
+    margin-bottom: 48px;
+    grid-column: 1 / 2;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .featured__specifications-list {
+    margin-bottom: 57px;
+    grid-column: 1 / 2;
+  }
+
+  .featured__price {
+    margin-bottom: 33px;
+    grid-column: 1 /2;
+    font-size: 20px;
+  }
+
+  .featured__order {
+    grid-column: 1 /2;
+  }
+}
+
+// @media (min-width: @desktop-width) {
+// }

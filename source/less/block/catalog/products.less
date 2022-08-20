@@ -1,5 +1,4 @@
 .products {
-  width: @mobile-width;
   padding: 30px;
   box-sizing: border-box;
 }
@@ -13,5 +12,11 @@
 
   &--last {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .products {
+    padding: 67px 0 0;
   }
 }
