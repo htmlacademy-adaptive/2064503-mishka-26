@@ -207,6 +207,7 @@
   .order__email-field-wrapper,
   .order__wishes-fild-wrapper {
     padding-left: 167px;
+    padding-bottom: 0;
   }
 
   .order__center-container {
@@ -223,5 +224,26 @@
 
   .order__button {
     width: 230px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order__type-list,
+  .order__full-name-list,
+  .order__phone-field-wrapper,
+  .order__email-field-wrapper,
+  .order__wishes-fild-wrapper {
+    padding-right: 173px;
+    padding-bottom: 0;
+  }
+
+  .order__color-list {
+    margin-right: 100px;
+  }
+
+  .order__phone,
+  .order__email {
+    width: @desktop-width;
+    padding-right: 170px;
   }
 }

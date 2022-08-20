@@ -103,3 +103,28 @@
     border-top: none;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .production__wrapper {
+    border: none;
+    display: grid;
+    grid-template-columns: 682px 288px;
+    column-gap: 80px;
+    padding: 0;
+  }
+
+  .production__image-wrapper {
+    margin: 0;
+    border: none;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+  }
+
+  .production__image {
+    margin: 0;
+  }
+
+  .production__text {
+    width: 288px;
+  }
+}
