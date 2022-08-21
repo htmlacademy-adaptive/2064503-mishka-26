@@ -1,5 +1,9 @@
 .intro {
   background-color: @color-dirty-white;
+
+  &-index {
+    background-color: #fafafa;
+  }
 }
 
 .intro__wrapper {
@@ -12,12 +16,12 @@
   &--index {
     padding-bottom: 120px;
     background-image: url("../img/backgrounds/index-intro-background.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
 
 .intro__title {
-  width: 260px;
   margin: 0 auto;
   font-weight: 700;
   font-size: 27px;
@@ -25,3 +29,31 @@
   text-align: center;
   color: @color-black;
 }
+
+@media (min-width: @tablet-width) {
+  .intro__wrapper {
+    .padding-sides-adaptive();
+    width: @tablet-width;
+    min-height: 226px;
+
+    &--index {
+      height: 632px;
+    }
+  }
+
+  .intro__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro__wrapper {
+    width: @desktop-width;
+
+    &--index {
+      height: 626px;
+    }
+  }
+}
+

@@ -1,6 +1,7 @@
 .main-header__wrapper {
   position: relative;
   width: @mobile-width;
+  height: 79px;
   margin: 0 auto;
   padding: 22px;
   box-sizing: border-box;
@@ -30,4 +31,19 @@
   top: 22px;
   right: 21px;
   cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__wrapper {
+    .padding-sides-adaptive();
+    width: @tablet-width;
+    height: 89px;
+    border-bottom: 1px solid @color-light-grey;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__wrapper {
+    width: @desktop-width;
+  }
 }

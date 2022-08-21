@@ -34,6 +34,7 @@ input:focus-visible {
   padding: 16px 0;
   border: none;
   border-bottom: 2px solid @color-black;
+  background-color: inherit;
 
   &::placeholder {
     font-family: inherit;
@@ -52,7 +53,8 @@ input:focus-visible {
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
     border-color: @color-tiffany;
 
     & + .field-icon {
@@ -79,5 +81,12 @@ input:focus-visible {
 
   &--close {
     display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .section-title {
+    font-size: 43px;
+    line-height: 50px;
   }
 }

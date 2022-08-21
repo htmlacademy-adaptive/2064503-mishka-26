@@ -2,3 +2,19 @@
   width: @mobile-width;
   margin: 0 auto;
 }
+
+
+@media (min-width: @tablet-width) {
+  .main-container__centering {
+    box-sizing: border-box;
+    .padding-sides-adaptive();
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-container__centering {
+    width: @desktop-width;
+  }
+}
+

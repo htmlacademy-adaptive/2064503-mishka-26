@@ -14,3 +14,28 @@
   font-size: 13px;
   line-height: 24px;
 }
+
+@media (min-width: @tablet-width) {
+  .info-slogan {
+    padding-top: 54px;
+    padding-bottom: 50px;
+  }
+
+  .info-slogan__wrapper {
+    width: @tablet-width;
+    padding: 0 50px;
+  }
+
+  .info-slogan__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info-slogan__wrapper {
+    width: @desktop-width;
+    padding-left: 174px;
+    padding-right: 174px;
+  }
+}

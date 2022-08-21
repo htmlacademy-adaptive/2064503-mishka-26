@@ -1,5 +1,4 @@
 .advantages {
-  width: @mobile-width;
   padding: 31px 30px 27px;
   box-sizing: border-box;
 }
@@ -101,5 +100,72 @@
 
   &--packaging {
     margin-top: 52px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    padding: 56px 0 83px;
+  }
+
+  .advantages__title {
+    margin-bottom: 41px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 35px;
+    row-gap: 58px;
+  }
+
+  .advantages__item {
+    width: 300px;
+    margin-bottom: 0;
+
+    &--ecology {
+      order: 1;
+    }
+
+    &--price {
+      order: 3;
+    }
+
+    &--likes {
+      order: 5;
+    }
+
+    &--knitting {
+      order: 2;
+    }
+
+    &--support {
+      order: 4;
+    }
+
+    &--packaging {
+      order: 6;
+    }
+  }
+
+  .advantages__text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .reviews__cite-wrapper {
+    margin-right: 220px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    padding-top: 68px;
+    padding-bottom: 90px;
+  }
+
+  .advantages__wrapper {
+    padding-left: 175px;
+    column-gap: 50px;
   }
 }

@@ -1,24 +1,38 @@
 .production {
-  width: @mobile-width;
   padding: 0 30px 58px;
   box-sizing: border-box;
 }
 
+.production__wrapper {
+  padding: 22px 33px 33px;
+  box-sizing: border-box;
+  border: 1px solid @color-light-grey;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(@color-black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(@color-black, 0.1);
+  }
+}
+
 .production__title {
   display: block;
-  padding: 22px 13px 26px 91px;
   margin: 0;
+  margin-bottom: 26px;
+  padding-left: 57px;
   font-size: 17px;
   line-height: 24px;
   color: @color-black;
   box-sizing: border-box;
-  border: 1px solid @color-light-grey;
   background-image: url("../img/icon/icon-camera.svg");
   background-repeat: no-repeat;
-  background-position: 34px 50%;
+  background-position: 0 50%;
 }
 
 .production__image-wrapper {
+  margin-bottom: 35px;
   position: relative;
   display: block;
   cursor: pointer;
@@ -46,21 +60,10 @@
 
 .production__image {
   display: block;
-}
-
-.production__description-wrapper {
-  padding: 35px 34px 33px;
+  margin-left: -34px;
   box-sizing: border-box;
-  border: 1px solid @color-light-grey;
-  border-top: none;
-
-  &:hover {
-    box-shadow: 0 6px 10px rgba(@color-black, 0.1);
-  }
-
-  &:active {
-    box-shadow: 0 3px 5px rgba(@color-black, 0.1);
-  }
+  border-top: 1px solid @color-light-grey;
+  border-bottom: 1px solid @color-light-grey;
 }
 
 .production__text {
@@ -70,4 +73,58 @@
   margin-bottom: 41px;
   font-size: 13px;
   line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .production {
+    padding: 53px 0 64px;
+  }
+
+  .production__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-top: none;
+  }
+
+  .production__image-wrapper {
+    order: -1;
+  }
+
+  .production__title {
+    border-bottom: none;
+  }
+
+  .production__image {
+    width: @tablet-width - 100px;
+    height: auto;
+    margin-left: -51px;
+    margin-top: -50px;
+    border-top: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .production__wrapper {
+    border: none;
+    display: grid;
+    grid-template-columns: 682px 288px;
+    column-gap: 80px;
+    padding: 0;
+  }
+
+  .production__image-wrapper {
+    margin: 0;
+    border: none;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+  }
+
+  .production__image {
+    margin: 0;
+  }
+
+  .production__text {
+    width: 288px;
+  }
 }
