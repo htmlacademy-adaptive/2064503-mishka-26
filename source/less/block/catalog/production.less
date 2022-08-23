@@ -4,9 +4,7 @@
 }
 
 .production__wrapper {
-  padding: 22px 33px 33px;
   box-sizing: border-box;
-  border: 1px solid @color-light-grey;
 
   &:hover {
     box-shadow: 0 6px 10px rgba(@color-black, 0.1);
@@ -17,22 +15,25 @@
   }
 }
 
+.production__title-wrapper {
+  padding: 22px 34px 26px;
+  box-sizing: border-box;
+  border: 1px solid @color-light-grey;
+}
+
 .production__title {
   display: block;
   margin: 0;
-  margin-bottom: 26px;
   padding-left: 57px;
   font-size: 17px;
   line-height: 24px;
   color: @color-black;
-  box-sizing: border-box;
   background-image: url("../img/icon/icon-camera.svg");
   background-repeat: no-repeat;
   background-position: 0 50%;
 }
 
 .production__image-wrapper {
-  margin-bottom: 35px;
   position: relative;
   display: block;
   cursor: pointer;
@@ -60,71 +61,70 @@
 
 .production__image {
   display: block;
-  margin-left: -34px;
   box-sizing: border-box;
-  border-top: 1px solid @color-light-grey;
-  border-bottom: 1px solid @color-light-grey;
+}
+
+.production__text-wrapper {
+  padding: 35px 34px 33px;
+  border: 1px solid @color-light-grey;
 }
 
 .production__text {
-  display: block;
   margin-top: 0;
-  margin-right: -10px;
   margin-bottom: 41px;
+  margin-right: -6px;
+  display: block;
   font-size: 13px;
   line-height: 24px;
 }
 
 @media (min-width: @tablet-width) {
   .production {
-    padding: 53px 0 64px;
+    padding: 0;
   }
 
   .production__wrapper {
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    border-top: none;
+  }
+
+  .production__title-wrapper {
+    border-bottom: none;
   }
 
   .production__image-wrapper {
     order: -1;
   }
 
-  .production__title {
-    border-bottom: none;
+  .production__image {
+    width: 100%;
+    height: 455px;
   }
 
-  .production__image {
-    width: @tablet-width - 100px;
-    height: auto;
-    margin-left: -51px;
-    margin-top: -50px;
+  .production__text-wrapper {
     border-top: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .production__wrapper {
-    border: none;
     display: grid;
-    grid-template-columns: 682px 288px;
-    column-gap: 80px;
-    padding: 0;
+    grid-template-columns: 682px auto;
+    margin-bottom: 104px;
+  }
+
+  .production__title-wrapper {
+    padding: 37px 56px 28px 80px;
+    grid-column: 2 / 3;
   }
 
   .production__image-wrapper {
-    margin: 0;
-    border: none;
     grid-column: 1 / 2;
-    grid-row: 1 / 4;
+    grid-row: 1 / 3;
   }
 
-  .production__image {
-    margin: 0;
-  }
-
-  .production__text {
-    width: 288px;
+  .production__text-wrapper {
+    padding: 0 56px 60px 80px;
+    grid-column: 2 / 3;
   }
 }
