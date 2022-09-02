@@ -1,0 +1,37 @@
+.event-list {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .event-list {
+    .list-reset();
+    position: absolute;
+    max-width: 800px;
+    max-height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    bottom: -43px;
+    left: 21px;
+    background-color: transparent;
+  }
+
+  .event-list__button {
+    display: inline;
+    padding: 20px 30px;
+    min-height: 0;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    background-color: transparent;
+    text-decoration: none;
+    color: @color-black;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

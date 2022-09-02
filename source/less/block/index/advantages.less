@@ -105,7 +105,7 @@
 
 @media (min-width: @tablet-width) {
   .advantages {
-    padding: 56px 0 83px;
+    padding: 56px 0 81px;
   }
 
   .advantages__title {
@@ -121,7 +121,9 @@
 
   .advantages__item {
     width: 300px;
+    min-height: 98px;
     margin-bottom: 0;
+
 
     &--ecology {
       order: 1;
@@ -161,11 +163,15 @@
 @media (min-width: @desktop-width) {
   .advantages {
     padding-top: 68px;
-    padding-bottom: 90px;
+    padding-bottom: 88px;
   }
 
   .advantages__wrapper {
     padding-left: 175px;
     column-gap: 50px;
+  }
+
+  .advantages__list {
+    column-gap: 52px;
   }
 }
