@@ -12,7 +12,11 @@
 }
 
 .order__type-item {
-  margin-bottom: 6px;
+  margin-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
+  }
 
   &--last {
     margin-bottom: 0;
@@ -194,10 +198,42 @@
     margin-bottom: 0;
   }
 
+  .order__full-name-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .order__full-name-label {
+    margin-right: 25px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .order__full-name-field {
+    width: 100%;
+  }
+
+  .order__contact-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .order__phone {
+    margin-bottom: 24px;
+  }
+
+  .order__phone-title,
+  .order__email-title {
+    top: 15px;
+  }
+
+
   .order__phone,
   .order__email {
     width: @tablet-width;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 0;
   }
 
   .order__type-list,
@@ -213,6 +249,7 @@
   .order__center-container {
     width: @tablet-width;
     padding: 50px;
+    padding-top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
