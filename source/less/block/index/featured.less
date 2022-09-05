@@ -1,5 +1,5 @@
 .featured {
-  .zig-zag-line();
+  position: relative;
   padding: 31px 30px 42px;
   box-sizing: border-box;
 }
@@ -32,7 +32,8 @@
 
 .featured__specifications-item {
   display: flex;
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 9px;
   box-sizing: border-box;
   line-height: 20px;
   border-bottom: 1px solid @color-light-grey;
@@ -80,6 +81,10 @@
     column-gap: 42px;
   }
 
+  .featured__title {
+    margin-bottom: 0;
+  }
+
   .featured__image {
     width: 334px;
     height: 404px;
@@ -97,14 +102,14 @@
   }
 
   .featured__description {
-    margin-bottom: 48px;
+    margin-bottom: 38px;
     grid-column: 1 / 2;
     font-size: 17px;
     line-height: 30px;
   }
 
   .featured__specifications-list {
-    margin-bottom: 57px;
+    margin-bottom: 60px;
     grid-column: 1 / 2;
   }
 
@@ -122,26 +127,41 @@
 @media (min-width: @desktop-width) {
   .featured__wrapper {
     position: relative;
+    padding-top: 54px;
     padding-left: 175px;
+    padding-bottom: 96px;
     grid-template-columns: 292px 525px;
     column-gap: 58px;
   }
 
   .featured__wrapper-title {
+    position: relative;
+    min-height: 118px;
     margin-right: -583px;
+    margin-bottom: 35px;
     grid-column: 1 / 2;
     z-index: 1;
+    align-items: flex-end;
+  }
+
+  .featured__product-week {
+    position: absolute;
+    margin: 0;
+    left: -143px;
+    bottom: 16px;
+  }
+
+  .featured__description {
+    margin-bottom: 50px;
+  }
+
+  .featured__specifications-list {
+    margin-bottom: 109px;
   }
 
   .featured__image {
     grid-row: 1 / 6;
     width: 526px;
     height: 636px;
-  }
-
-  .featured__product-week {
-    position: absolute;
-    left: 32px;
-    margin: 0;
   }
 }

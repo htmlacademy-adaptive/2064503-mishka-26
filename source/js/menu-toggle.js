@@ -1,15 +1,14 @@
-let modalMenu = document.getElementsByClassName('main-nav__modal-window')[0];
-let buttonOpen = document.getElementById('toggle-menu-open');
-let buttonClose = document.getElementById('toggle-menu-close');
+let navMain = document.querySelector('.main-nav');
+let navToggle = document.querySelector('.main-nav__toggle');
 
-buttonOpen.addEventListener('click', function() {
-  buttonOpen.classList.add("toggle-close");
-  buttonClose.classList.remove("toggle-close");
-  modalMenu.classList.toggle("main-nav__modal-window-open");
-})
+navMain.classList.remove('main-nav--nojs');
 
-buttonClose.addEventListener('click', function() {
-  buttonClose.classList.add("toggle-close");
-  buttonOpen.classList.remove("toggle-close");
-  modalMenu.classList.toggle("main-nav__modal-window-open");
-})
+navToggle.addEventListener('click', function () {
+  if (navMain.classList.contains('main-nav--closed')) {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+  } else {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+  }
+});

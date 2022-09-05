@@ -1,10 +1,15 @@
 .contacts {
+  position: relative;
   padding: 38px 30px 39px;
   box-sizing: border-box;
 }
 
 .contacts__title {
   margin-bottom: 28px;
+}
+
+.contacts__icon-flag {
+  display: none;
 }
 
 .contacts__info {
@@ -62,7 +67,19 @@
     box-sizing: border-box;
   }
 
+  .contacts__title {
+    margin-bottom: 49px;
+  }
+
+  .contacts__icon-flag {
+    position: absolute;
+    top: 46px;
+    right: 2px;
+    display: block;
+  }
+
   .contacts__info {
+    margin-bottom: 48px;
     display: flex;
     font-size: 17px;
   }
@@ -102,8 +119,9 @@
 @media (min-width: @desktop-width) {
   .contacts {
     padding-left: 174px;
+    padding-bottom: 105px;
     display: grid;
-    grid-template-columns: 394px 527px;
+    grid-template-columns: 304px 527px;
     grid-template-rows: auto;
     column-gap: 46px;
   }
@@ -116,6 +134,12 @@
     margin-bottom: 34px;
   }
 
+  .contacts__icon-flag {
+    top: 133px;
+    left: 63px;
+    right: none;
+  }
+
   .contacts__info {
     flex-direction: column;
     gap: 0;
@@ -126,10 +150,15 @@
     margin-bottom: 30px;
   }
 
+  .contacts__email-head {
+    width: 78px;
+    margin-right: 0;
+  }
+
   .contacts__map {
     width: 527px;
     height: 457px;
-    margin-bottom: 0;
+    margin: 0;
     grid-column: 2 / 3;
     grid-row: 1 / 4;
   }

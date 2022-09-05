@@ -46,3 +46,25 @@
     border-color: rgba(@color-black, 0.3);
   }
 }
+
+@media (min-width: @tablet-width) {
+  .type-control {
+    min-height: 52px;
+  }
+
+  .type-control__label {
+    margin-left: 80px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .type-control__mark {
+    width: 50px;
+    height: 50px;
+  }
+
+  .type-control__input:checked + .type-control__mark::before {
+    width: 20px;
+    height: 20px;
+  }
+}

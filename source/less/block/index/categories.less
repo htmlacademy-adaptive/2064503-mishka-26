@@ -1,3 +1,7 @@
+.categories {
+  position: relative;
+}
+
 .categories__list {
   .list-reset();
 }
@@ -44,6 +48,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .categories {
+    background-color: #fafafa;
+  }
+
   .categories__list {
     .padding-sides-adaptive();
     display: flex;
@@ -58,13 +66,25 @@
 
 
   .categories__item-link {
+    width: 100%;
+    padding: 25px 36px 34px;
     margin: 0;
+  }
+
+  .categories__item-title {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .categories__list {
     width: @desktop-width;
+  }
+
+  .categories__zig-zag {
+    height: 34px;
+    margin-top: -17px;
   }
 }
 

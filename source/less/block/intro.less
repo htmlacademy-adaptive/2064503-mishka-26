@@ -1,7 +1,7 @@
 .intro {
   background-color: @color-dirty-white;
 
-  &-index {
+  &--index {
     background-color: #fafafa;
   }
 }
@@ -34,10 +34,12 @@
   .intro__wrapper {
     .padding-sides-adaptive();
     width: @tablet-width;
-    min-height: 226px;
+    padding-top: 100px;
+    min-height: 225px;
 
     &--index {
-      height: 632px;
+      height: 626px;
+      padding-top: 155px;
     }
   }
 
@@ -53,7 +55,18 @@
 
     &--index {
       height: 626px;
+      padding-top: 157px;
     }
+  }
+
+  .categories__list {
+    padding-bottom: 12px;
+  }
+
+  .intro__title {
+    width: 700px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 

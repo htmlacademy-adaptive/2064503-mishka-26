@@ -14,6 +14,13 @@
   background-repeat: no-repeat;
   cursor: pointer;
 
+  @media (min-width: @tablet-width) {
+    min-width: 88px;
+    min-height: 50px;
+    border: none;
+    background-position: 19px 12px;
+  }
+
   &:hover {
     opacity: 0.6;
   }
@@ -31,4 +38,10 @@
 .slider__toggle-next {
   background-image: url("../img/icon/huge-arrow-right.svg");
   .slider__toggle();
+}
+
+@media (min-width: @tablet-width) {
+  .slider__toggles {
+    width: 176px;
+  }
 }
