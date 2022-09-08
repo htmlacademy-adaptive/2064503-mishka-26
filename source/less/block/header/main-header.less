@@ -1,3 +1,10 @@
+.main-header {
+  border-bottom: 1px solid @color-light-grey;
+  box-shadow:
+    0 1px 0 @color-light-grey,
+    inset 0 1px 0 @color-light-grey;
+}
+
 .main-header__wrapper {
   position: relative;
   width: @mobile-width;
@@ -7,9 +14,6 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  box-shadow:
-    0 1px 0 @color-light-grey,
-    inset 0 1px 0 @color-light-grey;
 }
 
 .main-header__logo {
@@ -23,13 +27,14 @@
 @media (min-width: @tablet-width) {
   .main-header__wrapper {
     width: @tablet-width;
-    min-height: 89px;
+    min-height: 88px;
     padding: 0 50px;
     justify-content: space-between;
     flex-direction: row;
   }
 
   .main-header__logo {
+    margin-top: 22px;
     margin-left: 0;
   }
 
@@ -49,8 +54,9 @@
 
   .main-header__logo {
     position: absolute;
+    margin: 0;
     left: 50%;
-    top: 22px;
+    top: 9px;
     transform: translateX(-50%);
   }
 }
