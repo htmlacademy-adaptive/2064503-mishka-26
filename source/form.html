@@ -10,8 +10,11 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html">
-          <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg.svg" width="86" height="35" alt="Магазин мягких вещей">
-        </a>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo/mishka-logo-desktop.svg" width="149" height="72" alt="Магазин мягких вещей">
+            <source media="(min-width: 768px)" srcset="img/logo/mishka-logo-tablet.svg" width="113" height="46" alt="Магазин мягких вещей">
+            <img src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин мягких вещей">
+          </picture>        </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
