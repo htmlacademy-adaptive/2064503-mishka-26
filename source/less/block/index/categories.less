@@ -9,7 +9,10 @@
 .categories__item {
   position: relative;
   box-sizing: border-box;
-  background-color: @color-tiffany;
+
+  &--interior {
+    background-color: @color-tiffany;
+  }
 
   &--toys {
     background-color: @color-tiffany-dark;
@@ -17,6 +20,7 @@
 }
 
 .categories__item-link {
+  position: relative;
   width: @mobile-width;
   padding: 24px 30px 31px;
   box-sizing: border-box;
@@ -24,17 +28,6 @@
   height: 100%;
   display: block;
   text-decoration: none;
-  background-repeat: no-repeat;
-
-  &--interior {
-    background-image: url("../img/icon/icon-lamp.svg");
-    background-position: top 23px right 36px;
-  }
-
-  &--toys {
-    background-image: url("../img/icon/icon-lego.svg");
-    background-position: top 21px right 27px;
-  }
 }
 
 .categories__item-title {
@@ -45,6 +38,21 @@
   line-height: 24px;
   color: @color-white;
   text-decoration: none;
+}
+
+.categories__item-icon {
+  position: absolute;
+  fill: #149080;
+
+  &--interior {
+    top: 23px;
+    right: 36px;
+  }
+
+  &--toys {
+    top: 21px;
+    right: 27px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -74,6 +82,17 @@
   .categories__item-title {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .categories__item-icon {
+    &--interior {
+      top: 30px;
+    }
+
+    &--toys {
+      top: 31px;
+      right: 33px;
+    }
   }
 }
 
