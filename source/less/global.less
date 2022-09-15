@@ -1,0 +1,113 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: @color-grey;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.visually-hidden {
+  .visually-hidden();
+}
+
+.section-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: @color-black;
+}
+
+.field {
+  padding: 16px 0;
+  border: none;
+  border-bottom: 2px solid @color-black;
+  background-color: inherit;
+
+  &::placeholder {
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 18px;
+    color: @color-black;
+    opacity: 0.3;
+  }
+
+  &:hover {
+    border-color: @color-tiffany;
+
+    & + .field-icon {
+      fill: @color-tiffany;
+      opacity: 1;
+    }
+  }
+
+  &:active,
+  &:focus {
+    border-color: @color-tiffany;
+
+    & + .field-icon {
+      fill: @color-tiffany;
+      opacity: 1;
+    }
+  }
+}
+
+.field-icon {
+  fill: @color-black;
+  opacity: 0.2;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(@color-white, 0.9);
+  z-index: 10;
+
+  &--close {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .section-title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .field {
+    padding-left: 16px;
+    padding-bottom: 14px;
+    font-size: 19px;
+    line-height: 18px;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 18px;
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .section-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+

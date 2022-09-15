@@ -1,0 +1,177 @@
+.advantages {
+  padding: 31px 30px 27px;
+  box-sizing: border-box;
+}
+
+.advantages__title {
+  margin-bottom: 28px;
+}
+
+.advantages__list {
+  display: grid;
+  .list-reset();
+}
+
+.advantages__item {
+  position: relative;
+  margin-bottom: 32px;
+
+  &--ecology {
+    margin-bottom: 30px;
+  }
+
+  &--price {
+    margin-bottom: 35px;
+  }
+
+  &--likes {
+    margin-bottom: 32px;
+  }
+
+  &--knitting {
+    margin-bottom: 33px;
+  }
+
+  &--support {
+    margin-bottom: 32px;
+  }
+
+  &--packaging {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__icon {
+  position: absolute;
+  top: 0;
+
+  &--ecology {
+    left: 8px;
+  }
+
+  &--price {
+    left: 0;
+  }
+
+  &--likes {
+    left: 7px;
+  }
+
+  &--knitting {
+    left: 3px;
+  }
+
+  &--support {
+    left: -6px;
+  }
+
+  &--packaging {
+    left: 3px;
+  }
+}
+
+.advantages__text {
+  margin: 0;
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: @color-black;
+
+  &--ecology {
+    margin-top: 54px;
+  }
+
+  &--price {
+    margin-top: 53px;
+  }
+
+  &--likes {
+    margin-top: 48px;
+  }
+
+  &--knitting {
+    margin-top: 51px;
+  }
+
+  &--support {
+    margin-top: 49px;
+  }
+
+  &--packaging {
+    margin-top: 52px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    padding: 56px 0 81px;
+  }
+
+  .advantages__title {
+    margin-bottom: 41px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 35px;
+    row-gap: 58px;
+  }
+
+  .advantages__item {
+    width: 300px;
+    min-height: 98px;
+    margin-bottom: 0;
+
+
+    &--ecology {
+      order: 1;
+    }
+
+    &--price {
+      order: 3;
+    }
+
+    &--likes {
+      order: 5;
+    }
+
+    &--knitting {
+      order: 2;
+    }
+
+    &--support {
+      order: 4;
+    }
+
+    &--packaging {
+      order: 6;
+    }
+  }
+
+  .advantages__text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .reviews__cite-wrapper {
+    margin-right: 220px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    padding-top: 68px;
+    padding-bottom: 88px;
+  }
+
+  .advantages__wrapper {
+    padding-left: 175px;
+    column-gap: 50px;
+  }
+
+  .advantages__list {
+    column-gap: 52px;
+  }
+}

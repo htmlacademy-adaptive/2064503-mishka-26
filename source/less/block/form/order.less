@@ -1,0 +1,285 @@
+.order {
+  padding-bottom: 55px;
+}
+
+.order__type-title {
+  margin-bottom: 30px;
+}
+
+.order__type-list {
+  .list-reset();
+  padding-bottom: 31px;
+}
+
+.order__type-item {
+  margin-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  &--last {
+    margin-bottom: 0;
+  }
+}
+
+.order__color-title {
+  margin-bottom: 25px;
+}
+
+.order__color-list {
+  .list-reset();
+  padding-bottom: 33px;
+}
+
+.order__color-item {
+  margin-bottom: 23px;
+
+  &--last {
+    margin-bottom: 0;
+  }
+}
+
+.order__full-name-title {
+  margin-bottom: 29px;
+}
+
+.order__full-name-list {
+  .list-reset();
+  padding-bottom: 34px;
+}
+
+.order__full-name-item {
+  display: flex;
+  margin-bottom: 22px;
+  flex-direction: column;
+
+  &--last {
+    margin-bottom: 0;
+  }
+}
+
+.order__full-name-label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: @color-black;
+}
+
+.order__phone {
+  margin: 0 auto;
+  width: @mobile-width;
+  display: flex;
+  padding: 0 30px 34px;
+  border: none;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.order__phone-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.order__phone-field {
+  padding-right: 38px;
+}
+
+.order__phone-icon {
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  transform: translateY(-50%);
+}
+
+.order__email {
+  margin: 0 auto;
+  width: @mobile-width;
+  display: flex;
+  padding: 0 30px 34px;
+  border: none;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.order__email-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.order__email-field {
+  padding-right: 38px;
+}
+
+.order__email-icon {
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  transform: translateY(-50%);
+}
+
+.order__wishes-title {
+  margin-bottom: 22px;
+}
+
+.order__wishes-field {
+  width: 100%;
+  height: 142px;
+  margin-bottom: 17px;
+  padding: 17px;
+  resize: none;
+  box-sizing: border-box;
+  border: 2px solid @color-black;
+  outline: 0;
+
+  &:hover {
+    border-color: @color-tiffany;
+  }
+
+  &:focus-visible {
+    border-color: @color-tiffany;
+  }
+
+  &::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    color: @color-black;
+    opacity: 0.3;
+  }
+}
+
+.order__center-container {
+  margin: 0 auto;
+  width: @mobile-width;
+  padding: 0 30px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.order__note {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .order {
+    padding-bottom: 0;
+  }
+
+  .order__type-wrapper,
+  .order__color-wrapper,
+  .order__full-name-wrapper,
+  .order__phone,
+  .order__email,
+  .order__wishes-wrapper {
+    position: relative;
+  }
+
+  .order__color-wrapper,
+  .order__contact-wrapper {
+    position: relative;
+    background-color: @color-dirty-white;
+  }
+
+  .order__color-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 28px;
+    row-gap: 24px;
+  }
+
+  .order__color-item {
+    width: 236px;
+    margin-bottom: 0;
+  }
+
+  .order__full-name-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .order__full-name-label {
+    margin-right: 25px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .order__full-name-field {
+    width: 100%;
+  }
+
+  .order__contact-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .order__phone {
+    margin-bottom: 24px;
+  }
+
+  .order__phone-title,
+  .order__email-title {
+    top: 15px;
+  }
+
+
+  .order__phone,
+  .order__email {
+    width: @tablet-width;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 0;
+  }
+
+  .order__type-list,
+  .order__color-list,
+  .order__full-name-list,
+  .order__phone-field-wrapper,
+  .order__email-field-wrapper,
+  .order__wishes-fild-wrapper {
+    padding-left: 167px;
+    padding-bottom: 0;
+  }
+
+  .order__center-container {
+    width: @tablet-width;
+    padding: 50px;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .order__note {
+    order: 2;
+  }
+
+  .order__button {
+    width: 230px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order__type-list,
+  .order__full-name-list,
+  .order__phone-field-wrapper,
+  .order__email-field-wrapper,
+  .order__wishes-fild-wrapper {
+    margin-right: 173px;
+    padding-bottom: 0;
+  }
+
+  .order__color-list {
+    margin-right: 100px;
+  }
+
+  .order__phone,
+  .order__email {
+    width: @desktop-width;
+  }
+}

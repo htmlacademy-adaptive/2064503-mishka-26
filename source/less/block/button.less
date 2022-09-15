@@ -1,0 +1,40 @@
+.button {
+  width: 100%;
+  display: block;
+  padding: 14px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  box-sizing: border-box;
+  border: 2px solid @color-grey;
+  text-align: center;
+  color: @color-grey;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: @color-white;
+  cursor: pointer;
+
+  &:hover {
+    color: @color-white;
+    background-color: @color-grey;
+    border-color: @color-grey;
+  }
+
+  &:active {
+    color: rgba(@color-white, 0.3);
+    background-color: @color-grey;
+    border-color: @color-grey;
+  }
+}
+
+.button--add-cart {
+  color: @color-white;
+  background-color: @color-tiffany;
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    font-size: 17px;
+  }
+}

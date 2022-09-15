@@ -1,0 +1,27 @@
+.size-control__mark {
+  display: flex;
+  width: 82px;
+  height: 52px;
+  box-sizing: border-box;
+  border: 2px solid rgba(@color-grey, 0.1);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    border-color: rgba(@color-grey, 0.3);
+  }
+
+  &:active {
+    opacity: 1;
+    border-color: @color-tiffany;
+  }
+}
+
+.size-control__input:checked + .size-control__mark {
+  opacity: 1;
+  border-color: @color-tiffany;
+}
