@@ -66,6 +66,11 @@
   color: @color-black;
 }
 
+.order__phone-title,
+.order__email-title {
+  margin-bottom: 4.5px;
+}
+
 .order__phone {
   margin: 0 auto;
   width: @mobile-width;
@@ -121,10 +126,11 @@
 }
 
 .order__wishes-title {
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 }
 
 .order__wishes-field {
+  display: block;
   width: 100%;
   height: 142px;
   margin-bottom: 17px;
@@ -133,6 +139,8 @@
   box-sizing: border-box;
   border: 2px solid @color-black;
   outline: 0;
+  font-size: 19px;
+  line-height: 18px;
 
   &:hover {
     border-color: @color-tiffany;
@@ -144,7 +152,7 @@
 
   &::placeholder {
     font-family: "Open Sans", sans-serif;
-    font-size: 17px;
+    font-size: 19px;
     line-height: 18px;
     color: @color-black;
     opacity: 0.3;
@@ -161,7 +169,7 @@
 
 .order__note {
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 16px;
 }
@@ -225,6 +233,7 @@
   .order__phone-title,
   .order__email-title {
     top: 15px;
+    margin: 0;
   }
 
 
@@ -255,22 +264,32 @@
     justify-content: space-between;
   }
 
+  .order__wishes-field {
+    margin-bottom: 0;
+  }
+
   .order__note {
     order: 2;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .order__button {
     width: 230px;
+    margin-top: 3px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .order__type-list,
   .order__full-name-list,
+  .order__color-list,
   .order__phone-field-wrapper,
   .order__email-field-wrapper,
   .order__wishes-fild-wrapper {
-    margin-right: 173px;
+    margin-right: 174px;
+    padding-left: 174px;
     padding-bottom: 0;
   }
 
@@ -281,5 +300,15 @@
   .order__phone,
   .order__email {
     width: @desktop-width;
+  }
+
+  .order__center-container {
+    margin-top: -6px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .order__button {
+    margin-bottom: 0;
   }
 }

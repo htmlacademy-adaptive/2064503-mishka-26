@@ -8,12 +8,17 @@
 
 @media (min-width: @tablet-width) {
   .site-list {
+    max-width: 380px;
     position: absolute;
     display: flex;
     flex-wrap: wrap;
     bottom: -46px;
     left: 32px;
     background-color: transparent;
+  }
+
+  .site-list__item {
+    max-width: 300px;
   }
 
   .site-list__button {
