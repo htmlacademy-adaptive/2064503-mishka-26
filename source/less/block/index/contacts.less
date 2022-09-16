@@ -123,6 +123,7 @@
 @media (min-width: @desktop-width) {
   .contacts {
     padding-left: 174px;
+    padding-top: 71px;
     padding-bottom: 105px;
     display: grid;
     grid-template-columns: 304px 527px;
@@ -153,9 +154,11 @@
     margin-bottom: 30px;
   }
 
+  .contacts__address-head,
   .contacts__email-head {
-    width: 78px;
-    margin-right: 0;
+    min-width: 60px;
+    max-width: 90px;
+    margin-right: 18px;
   }
 
   .contacts__map {

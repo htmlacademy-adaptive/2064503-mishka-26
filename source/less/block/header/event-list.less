@@ -5,14 +5,18 @@
 @media (min-width: @desktop-width) {
   .event-list {
     .list-reset();
+    max-width: 600px;
     position: absolute;
-    max-width: 800px;
     max-height: 160px;
     display: flex;
     flex-wrap: wrap;
     bottom: -43px;
     left: 21px;
     background-color: transparent;
+  }
+
+  .event-list__item {
+    max-width: 300px;
   }
 
   .event-list__button {

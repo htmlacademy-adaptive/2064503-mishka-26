@@ -1,4 +1,6 @@
 .title-legend {
+  position: relative;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-weight: 700;
@@ -6,11 +8,37 @@
   line-height: 16px;
   color: @color-tiffany;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 200px;
+    height: 1px;
+    background-color: @color-tiffany;
+    transform: translateY(-50%);
+  }
+
+  &.order__email-title&::after {
+    width: 182px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .title-legend {
     position: absolute;
     top: 66px;
+    width: auto;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .title-legend {
+    left: 112px;
   }
 }
