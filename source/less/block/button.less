@@ -14,18 +14,6 @@
   background-color: @color-white;
   cursor: pointer;
 
-  &:hover {
-    color: @color-white;
-    background-color: @color-grey;
-    border-color: @color-grey;
-  }
-
-  &:active {
-    color: rgba(@color-white, 0.3);
-    background-color: @color-grey;
-    border-color: @color-grey;
-  }
-
   &--form {
     font-size: 17px;
     line-height: 16px;
@@ -39,6 +27,19 @@
     color: @color-white;
     background-color: @color-tiffany;
     border: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: @color-white;
+    background-color: @color-grey;
+    border-color: @color-grey;
+  }
+
+  &:active {
+    color: rgba(@color-white, 0.3);
+    background-color: @color-grey;
+    border-color: @color-grey;
   }
 }
 
